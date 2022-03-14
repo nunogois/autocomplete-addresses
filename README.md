@@ -2,6 +2,8 @@
 
 Very simple Vite app for autocompleting addresses built with React + TypeScript.
 
+Currently hosted on Vercel: https://autocomplete-addresses.nunogois.com/
+
 Uses [autocomplete-addresses-api](https://github.com/nunogois/autocomplete-addresses-api) as the back-end.
 
 Since I prefer a microservice and decoupled approached compared to setting up monorepos, as always I decided to separate the front-end and back-end in different repos.
