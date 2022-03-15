@@ -1,10 +1,14 @@
 interface AddressProps extends Address {
-  last: boolean
+  last?: boolean
 }
 
-function Address({ street, postNumber, city, last }: AddressProps) {
+function Address({ street, postNumber, city, last = false }: AddressProps) {
   return (
-    <div className={'border-gray-400 p-2 w-72' + (!last ? ' border-b' : '')}>
+    <div
+      className={
+        'border-gray-400 p-2 w-72 max-w-full' + (!last ? ' border-b' : '')
+      }
+    >
       <p className='text-gray-700'>
         <span className='font-bold'>Street: </span>
         {street}
