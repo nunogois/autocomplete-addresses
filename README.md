@@ -1,6 +1,6 @@
 # autocomplete-addresses
 
-Very simple Vite app for autocompleting addresses built with React + TypeScript.
+Very simple Vite app for autocompleting addresses built with React + TypeScript + Tailwind CSS.
 
 Currently hosted on Vercel: https://autocomplete-addresses.nunogois.com/
 
@@ -21,6 +21,8 @@ flowchart LR
 3. Install dependencies: `yarn` or `npm install`;
 4. Run tests: `yarn test` or `npm run test`;
 5. Run the server: `yarn start` or `npm run start`;
+
+Check out [autocomplete-addresses-api](https://github.com/nunogois/autocomplete-addresses-api) and follow its instructions to run the API, so you can run everything together locally.
 
 ## Developer Log
 
