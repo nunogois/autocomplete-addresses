@@ -12,8 +12,8 @@ it('renders an error message if error', () => {
 })
 
 it('renders a no results found message if no results found but valid search', () => {
-  mount(<Addresses addresses={[]} search={true} />)
-  cy.get('p').contains('No addresses found.')
+  mount(<Addresses addresses={[]} search={'abcdefg'} />)
+  cy.get('p').contains('No addresses found for: abcdefg.')
 })
 
 it('renders results', () => {

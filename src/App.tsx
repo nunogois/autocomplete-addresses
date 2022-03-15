@@ -19,6 +19,8 @@ function App() {
         .then(setAddresses)
         .catch(e => setError(e.message))
         .finally(() => setLoading(false))
+    } else {
+      setAddresses([])
     }
   }, [search])
 
@@ -40,7 +42,7 @@ function App() {
         addresses={addresses}
         loading={loading}
         error={error}
-        search={search.length >= 3}
+        search={search}
       />
     </div>
   )

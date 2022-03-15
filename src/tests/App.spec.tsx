@@ -11,16 +11,16 @@ it('renders search field', () => {
   cy.get('input').should('have.attr', 'placeholder', 'Search addresses...')
 })
 
-it('renders search results', () => {
+it('renders search results (assuming local API connection)', () => {
   mount(<App />)
   cy.get('input').type('oslo')
   cy.get('span', { timeout: 2000 }).should('be.visible')
   cy.contains('Oslo').should('be.visible')
 })
 
-it("renders an error message in case we don't get any results", () => {
+it("renders an error message in case we don't get any results (assuming local API connection)", () => {
   mount(<App />)
   cy.get('input').type('abcdefg')
   cy.get('p', { timeout: 2000 }).should('be.visible')
-  cy.contains('No addresses found.').should('be.visible')
+  cy.contains('No addresses found for: abcdefg.').should('be.visible')
 })
