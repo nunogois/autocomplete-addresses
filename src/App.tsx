@@ -13,7 +13,7 @@ function App() {
       fetch(
         `${
           import.meta.env.VITE_API ?? 'http://localhost:5000'
-        }/search/${search}`
+        }/search/${encodeURIComponent(search)}`
       )
         .then(res => res.json())
         .then(setAddresses)
