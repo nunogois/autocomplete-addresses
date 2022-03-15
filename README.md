@@ -35,3 +35,5 @@ Since this is a simple single page application, I will not need routing and othe
 The main entrypoint and file for this app will be `src/App.tsx`.
 
 I considered the e2e tests included in the `tests` folder for `App.tsx`, `Address.tsx` and `Addresses.tsx` to represent a good enough code coverage given the time available.
+
+If this were a prod app, I would definitely consider adding a debounce to the search field.
